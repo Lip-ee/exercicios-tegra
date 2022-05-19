@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ex04/style.css">
+    <title>Exercício 04</title>
+</head>
+<body>
+
+    <h3>Exercício 04</h3>
+    <p>
+        Fazer um programa para calcular o troco no processo de pagamento
+        de um produto de uma mercearia. O programa deve ler o preço unitário
+        do produto, a quantidade de unidades compradas deste produto, e o valor
+        em dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
+        programa deve mostrar o valor do troco a ser devolvido ao cliente:
+    </p>
+    <hr>
+    
+    <label for="precoUnit">Preço unitário do produto: </label>
+    <input type="text" id="precoUnit" name="precoUnit"> <br><br>
+    
+    <label for="qtdComprada">Quantidade comprada: </label>
+    <input type="text" id="qtdComprada" name="qtdComprada"><br><br>
+
+    <label for="dinheiroRecebido">Dinheiro recebido: </label>
+    <input type="text" id="dinheiroRecebido" name="dinheiroRecebido"> <br><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="troco"></p>
+
+    <script src="/ex04/script.js"></script>
+
+</body>
+</html>
