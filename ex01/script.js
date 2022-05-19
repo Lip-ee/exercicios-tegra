@@ -10,8 +10,8 @@ function calcular(){
     comprimentoTerreno = parseFloat(comprimentoTerreno).toFixed(2);
     valorMetroQuad = parseFloat(valorMetroQuad).toFixed(2);
     
-    area = parseFloat(larguraTerreno * comprimentoTerreno).toFixed(2);
-    valor = parseFloat(area * valorMetroQuad).toFixed(2);
+    area = (larguraTerreno * comprimentoTerreno).toFixed(2);
+    valor = (area * valorMetroQuad).toFixed(2);
 
     // verificar logs
     // console.log(`${larguraTerreno}`);
