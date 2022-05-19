@@ -1,5 +1,5 @@
 function calcular(){
-    //atribuindo variáveis e convertendo em float com n casas decimais
+    // atribuindo variáveis e convertendo em float com n casas decimais
     let nome1, idade1, nome2, idade2, media;
     nome1 = document.getElementById("nome1").value;
     idade1 = parseFloat(document.getElementById("idade1").value);

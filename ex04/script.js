@@ -1,5 +1,5 @@
 function calcular(){
-    //atribuindo variáveis e convertendo em float com n casas decimais
+    // atribuindo variáveis e convertendo em float com n casas decimais
     let precoUnit, qtdComprada, dinheiroRecebido, troco;
     precoUnit = parseFloat(document.getElementById("precoUnit").value);
     qtdComprada = parseFloat(document.getElementById("qtdComprada").value);
