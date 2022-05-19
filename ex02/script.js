@@ -12,8 +12,6 @@ function calcular(){
     perimetro = (2 * (base + altura)).toFixed(4);
     diagonal = (Math.sqrt((base ** 2) + (altura ** 2))).toFixed(4);
 
-    console.log(perimetro);
-
     document.getElementById("areaRet").innerHTML = `ÁREA = ${area}`;
     document.getElementById("perimetroRet").innerHTML = `PERÍMETRO = ${perimetro}`;
     document.getElementById("diagonalRet").innerHTML = `DIAGONAL = ${diagonal}`;
