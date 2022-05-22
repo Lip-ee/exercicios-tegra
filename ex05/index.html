@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ex05/style.css">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
     <title>Exercício 05</title>
 </head>
 <body>
 
-    <h3>Exercício 05</h3>
-    <p>
-        Fazer um programa para ler o valor "r" do raio de um círculo, e depois
-        mostrar o valor da área do círculo com três casas decimais. A fórmula da
-        área do círculo é a seguinte: π * r^2. O valor de π corresponde a 3.14159:
-    </p>
-    <hr>
-    
-    <label for="raio">Digite o valor do raio do circulo: </label>
-    <input type="text" id="raio" name="raio"> <br><br>
-    
-    <button onclick="calcular()">Calcular</button>
+    <!-- TITLE + DESC -->
+    <div id="box-text">
 
-    <p id="area"></p>
+        <h3>Exercício 05</h3>
+        <p>
+            Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+            mostrar o valor da área do círculo com três casas decimais. A fórmula da
+            área do círculo é a seguinte: área = π. r2. O valor de π corresponde a 3.14159:
+        </p>
 
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="raio">Digite o valor do raio do círculo: </label>
+            <input type="text" id="raio" name="raio"> <br><br>
+
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
     <script src="/ex05/script.js"></script>
 
 </body>

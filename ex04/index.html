@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ex04/style.css">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
     <title>Exercício 04</title>
 </head>
 <body>
 
-    <h3>Exercício 04</h3>
-    <p>
-        Fazer um programa para calcular o troco no processo de pagamento
-        de um produto de uma mercearia. O programa deve ler o preço unitário
-        do produto, a quantidade de unidades compradas deste produto, e o valor
-        em dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
-        programa deve mostrar o valor do troco a ser devolvido ao cliente:
-    </p>
-    <hr>
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 04</h3>
+        <p>
+            Fazer um programa para calcular o troco no processo de pagamento de
+            um produto de uma mercearia. O programa deve ler o preço unitário do
+            produto, a quantidade de unidades compradas deste produto, e o valor em
+            dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
+            programa deve mostrar o valor do troco a ser devolvido ao cliente:
+        </p>
+
+    </div>
     
-    <label for="precoUnit">Preço unitário do produto: </label>
-    <input type="text" id="precoUnit" name="precoUnit"> <br><br>
-    
-    <label for="qtdComprada">Quantidade comprada: </label>
-    <input type="text" id="qtdComprada" name="qtdComprada"><br><br>
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
 
-    <label for="dinheiroRecebido">Dinheiro recebido: </label>
-    <input type="text" id="dinheiroRecebido" name="dinheiroRecebido"> <br><br>
+            <h3>Input</h3>
+            <label for="precoUnit">Preço unitário do produto: </label>
+            <input type="text" id="precoUnit" name="precoUnit"> <br><br>
 
-    <button onclick="calcular()">Calcular</button>
+            <label for="qtdComprada">Quantidade comprada: </label>
+            <input type="text" id="qtdComprada" name="qtdComprada"> <br><br>
 
-    <p id="troco"></p>
+            <label for="dinheiroRecebido">Dinheiro recebido: </label>
+            <input type="text" id="dinheiroRecebido" name="dinheiroRecebido"> <br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
 
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
     <script src="/ex04/script.js"></script>
 
 </body>
