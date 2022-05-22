@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 08</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 08</h3>
+        <p>
+            Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+            mostrar (imprimir os dados com quatro casas decimais):<br>
+            a) a área do quadrado que tem lado A<br>
+            b) a área do triângulo que tem base A e altura B<br>
+            c) a área do trapézio que tem bases A e B, e altura C:
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="medidaA">Digite a medida A: </label>
+            <input type="text" id="medidaA" name="medidaA"> <br><br>
+
+            <label for="medidaB">Digite a medida B: </label>
+            <input type="text" id="medidaB" name="medidaB"> <br><br>
+            
+            <label for="medidaC">Digite a medida C: </label>
+            <input type="text" id="medidaC" name="medidaC"> <br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex08/script.js"></script>
+
+</body>
+</html>

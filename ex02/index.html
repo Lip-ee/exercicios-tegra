@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ex02/style.css">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
     <title>Exercício 02</title>
 </head>
 <body>
 
-    <h3>Exercício 02</h3>
-    <p>
-        Fazer um programa para ler as medidas da base e altura de um
-        retângulo. Em seguida, mostrar o valor da área, perímetro e 
-        diagonal deste retângulo, com quatro casas decimais:
-    </p>
-    <hr>
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 02</h3>
+        <p>
+            Fazer um programa para ler as medidas da base e altura de um retângulo.
+            Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo,
+            com quatro casas decimais:
+        </p>
+
+    </div>
     
-    <label for="base">Base do retângulo: </label>
-    <input type="text" id="base" name="base"> <br><br>
-    
-    <label for="altura">Altura do retângulo: </label>
-    <input type="text" id="altura" name="altura"><br><br>
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
 
-    <button onclick="calcular()">Calcular</button>
+            <h3>Input</h3>
+            <label for="baseRetangulo">Base do retângulo: </label>
+            <input type="text" id="baseRetangulo" name="baseRetangulo"> <br><br>
 
-    <p id="areaRet"></p>
-    <p id="perimetroRet"></p>
-    <p id="diagonalRet"></p>
+            <label for="alturaRetangulo">Altura do retângulo: </label>
+            <input type="text" id="alturaRetangulo" name="alturaRetangulo"> <br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
 
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
     <script src="/ex02/script.js"></script>
 
 </body>

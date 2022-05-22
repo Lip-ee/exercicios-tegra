@@ -1,18 +1,18 @@
 function calcular(){
-    // atribuindo variáveis e convertendo em float com n casas decimais
-    let nome1, idade1, nome2, idade2, media;
-    nome1 = document.getElementById("nome1").value;
-    idade1 = parseFloat(document.getElementById("idade1").value);
-    nome2 = document.getElementById("nome2").value;
-    idade2 = parseFloat(document.getElementById("idade2").value);
 
-    media = ((idade1 + idade2) / 2).toFixed(1)
+    // atribuindo variáveis e resolvendo a lógica
+    let n1 = document.getElementById("nome1").value;
+    let i1 = parseFloat(document.getElementById("idade1").value);
+    let n2 = document.getElementById("nome2").value;
+    let i2 = parseFloat(document.getElementById("idade2").value);
+    let media = ((i1 + i2) / 2).toFixed(1);
 
-    document.getElementById("idadeMedia").innerHTML = `
-        Nome1: ${nome1} <br>
-        Idade1: ${idade1} <br>
-        Nome2: ${nome2} <br>
-        Idade2: ${idade2} <br>
-        A idade média de ${nome1} e ${nome2} é de ${media} anos
-    `
+    // output
+    document.getElementById("output").innerHTML = `
+    Nome1: <span><b>${n1}</b></span> <br><br>
+    Idade 1: <span><b>${i1}</b></span> <br><br>
+    Nome2: <span><b>${n2}</b></span> <br><br>
+    Idade2: <span><b>${i2}</b></span> <br><br>
+    A idade média de ${n1} e ${n2} é de ${media} anos
+    `;
 }

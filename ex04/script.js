@@ -1,17 +1,17 @@
 function calcular(){
-    // atribuindo variáveis e convertendo em float com n casas decimais
-    let precoUnit, qtdComprada, dinheiroRecebido, troco;
-    precoUnit = parseFloat(document.getElementById("precoUnit").value);
-    qtdComprada = parseFloat(document.getElementById("qtdComprada").value);
-    dinheiroRecebido = parseFloat(document.getElementById("dinheiroRecebido").value);
 
-    troco = (dinheiroRecebido - (qtdComprada * precoUnit)).toFixed(2)
+    // atribuindo variáveis e resolvendo a lógica
+    let precoUnit = parseFloat(document.getElementById("precoUnit").value).toFixed(2);
+    let qtdComprada = parseFloat(document.getElementById("qtdComprada").value);
+    let dinheiroRecebido = parseFloat(document.getElementById("dinheiroRecebido").value).toFixed(2);
+    
+    let troco = (dinheiroRecebido - (precoUnit * qtdComprada)).toFixed(2)
 
     // output
-    document.getElementById("troco").innerHTML = `
-        Preço unitário do produto: ${precoUnit} <br>
-        Quantidade comprada: ${qtdComprada} <br>
-        Dinheiro recebido: ${dinheiroRecebido} <br>
-        TROCO = ${troco}
-    `
+    document.getElementById("output").innerHTML = `
+    Preço unitário do produto: <span><b>${precoUnit}</b></span> <br><br>
+    Quantidade comprada: <span><b>${qtdComprada}</b></span> <br><br>
+    Dinheiro recebido: <span><b>${dinheiroRecebido}</b></span> <br><br>
+    TROCO = <b>${troco}</b>
+    `;
 }

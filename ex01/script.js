@@ -1,23 +1,24 @@
 function calcular(){
-    // atribuindo variáveis
+
+    // atribuindo variáveis e resolvendo a lógica
     let larguraTerreno = document.getElementById("largura").value;
     let comprimentoTerreno = document.getElementById("comprimento").value;
     let valorMetroQuad = document.getElementById("valor").value;
     let area, valor;
 
-    // convertendo em float com 2 casas decimais
-    larguraTerreno = parseFloat(larguraTerreno).toFixed(2);
-    comprimentoTerreno = parseFloat(comprimentoTerreno).toFixed(2);
-    valorMetroQuad = parseFloat(valorMetroQuad).toFixed(2);
-    
-    area = (larguraTerreno * comprimentoTerreno).toFixed(2);
-    valor = (area * valorMetroQuad).toFixed(2);
+    larguraTerreno = parseFloat(larguraTerreno).toFixed(1)
+    comprimentoTerreno = parseFloat(comprimentoTerreno).toFixed(1)
+    valorMetroQuad = parseFloat(valorMetroQuad).toFixed(2)
 
-    // verificar logs
-    // console.log(`${larguraTerreno}`);
-    // console.log(`${comprimentoTerreno}`);
-    // console.log(`${valorMetroQuad}`);
+    area = (larguraTerreno * comprimentoTerreno).toFixed(2)
+    valor = (area * valorMetroQuad).toFixed(2)
 
-    document.getElementById("areaTerreno").innerHTML = `Área do terreno = ${area}`;
-    document.getElementById("valorTerreno").innerHTML = `Preço do terreno = ${valor}`;
+    // output
+    document.getElementById("output").innerHTML = `
+    Largura do terreno: <span><b>${larguraTerreno}</b></span> <br><br>
+    Comprimento do terreno: <span><b>${comprimentoTerreno}</b></span> <br><br>
+    Valor do metro quadrado: <span><b>${valorMetroQuad}</b></span> <br><br>
+    Área do terreno = <b>${area}</b> <br><br>
+    Valor do terreno = <b>${valor}</b>
+    `;
 }

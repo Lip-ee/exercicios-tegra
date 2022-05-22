@@ -1,18 +1,20 @@
 function calcular(){
-    // atribuindo variáveis
-    let base = document.getElementById("base").value;
-    let altura = document.getElementById("altura").value;
+
+    // atribuindo variáveis e resolvendo a lógica
+    let base = document.getElementById("baseRetangulo").value;
+    let altura = document.getElementById("alturaRetangulo").value;
     let area, perimetro, diagonal;
 
-    // convertendo em float com n casas decimais
-    base = parseFloat(base);
-    altura = parseFloat(altura);
-    
-    area = (base * altura).toFixed(4);
-    perimetro = (2 * (base + altura)).toFixed(4);
-    diagonal = (Math.sqrt((base ** 2) + (altura ** 2))).toFixed(4);
+    area = (parseFloat(base) * parseFloat(altura)).toFixed(4);
+    perimetro = (2 * (parseFloat(base) + parseFloat(altura))).toFixed(4);
+    diagonal = (Math.sqrt( (parseFloat(base) ** 2) + (parseFloat(altura) ** 2) )).toFixed(4);
 
-    document.getElementById("areaRet").innerHTML = `ÁREA = ${area}`;
-    document.getElementById("perimetroRet").innerHTML = `PERÍMETRO = ${perimetro}`;
-    document.getElementById("diagonalRet").innerHTML = `DIAGONAL = ${diagonal}`;
+    // output
+    document.getElementById("output").innerHTML = `
+    Base do retângulo: <span><b>${base}</b></span> <br><br>
+    Altura do retângulo: <span><b>${altura}</b></span> <br><br>
+    ÁREA = <b>${area}</b> <br><br>
+    PERÍMETRO = <b>${perimetro}</b> <br><br>
+    DIAGONAL = <b>${diagonal}</b>
+    `;
 }

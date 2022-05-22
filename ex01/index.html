@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ex01/style.css">
+    <link rel="stylesheet" href="../generic-style.css">
     <title>Exercício 01</title>
 </head>
 <body>
 
-    <h3>Exercício 01</h3>
-    <p>
-        Fazer um programa para ler as medidas de largura e comprimento de um terreno retangular
-        com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno,
-        ambos com duas casas decimais:
-    </p>
-    <hr>
+    <div id="box-text">
+
+        <h3>Exercício 01</h3>
+        <p>
+            Fazer um programa para ler as medidas de largura e comprimento de um terreno retangular
+            com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
+            Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno,
+            ambos com duas casas decimais:
+        </p>
+        
+    </div>
     
-    <label for="largura">Largura do terreno: </label>
-    <input type="text" id="largura" name="largura"> <br><br>
+    <div id="input-div">
+        <div id="box-text">
 
-    <label for="comprimento">Comprimento do terreno: </label>
-    <input type="text" id="comprimento" name="comprimento"> <br><br>
-    
-    <label for="valor">Valor do terreno: </label>
-    <input type="text" id="valor" name="valor"><br><br>
+            <h3>Input</h3>
+            <label for="largura">Largura do terreno: </label>
+            <input type="text" id="largura" name="largura"> <br><br>
 
-    <button onclick="calcular()">Calcular</button>
+            <label for="comprimento">Comprimento do terreno: </label>
+            <input type="text" id="comprimento" name="comprimento"> <br><br>
+            
+            <label for="valor">Valor do terreno: </label>
+            <input type="text" id="valor" name="valor"><br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
 
-    <p id="areaTerreno"></p>
-    <p id="valorTerreno"></p>
+        </div>
+    </div>
+
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+
+        <p id="output"></p>
+        </div>
+    </div>
 
     <script src="/ex01/script.js"></script>
 

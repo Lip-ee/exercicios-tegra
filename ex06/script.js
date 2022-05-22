@@ -1,16 +1,16 @@
 function calcular(){
-    // atribuindo variáveis e convertendo em float com n casas decimais
-    let nome = document.getElementById("nome").value;
-    let valorH = parseFloat(document.getElementById("valorH").value);
-    let horasTrab = parseInt(document.getElementById("horasTrab").value);
 
-    let pag = valorH * horasTrab
+    // atribuindo variáveis e resolvendo a lógica
+    let nome = document.getElementById("nome").value;
+    let valorHora = parseFloat(document.getElementById("valorHora").value).toFixed(2);
+    let horasTrab = parseFloat(document.getElementById("horasTrab").value);
+    let salario = (horasTrab * valorHora).toFixed(2);
     
     // output
-    document.getElementById("pagamentoFinal").innerHTML = `
-        Nome: ${nome} <br>
-        Valor por hora: ${valorH.toFixed(2)} <br>
-        Horas trabalhadas: ${horasTrab} <br>
-        O pagamento para ${nome} deve ser ${pag.toFixed(2)}
-    `
+    document.getElementById("output").innerHTML = `
+    Nome: <span><b>${nome}</b></span> <br><br>
+    Valor por hora: <span><b>${valorHora}</b></span> <br><br>
+    Horas trabalhadas: <span><b>${horasTrab}</b></span> <br><br>
+    O pagamento para ${nome} deve ser <b>${salario}</b>
+    `;
 }
