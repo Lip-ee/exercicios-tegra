@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 18</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 18</h3>
+        <p>
+            Deseja-se converter uma medida de temperatura da escala Celcius para
+            Fahrenheit ou vice-versa. Para isso, você deve construir um programa que
+            leia a letra "C" ou "F", indicando em qual escala vai ser informada uma 
+            temperatura. Em seguida, o programa deve mostrar a temperatura na
+            outra escala com duas casas decimais. Você deve pesquisar as fórmulas
+            para conversão de Fahrenheit->Celcius e de Celcius->Fahrenheit:
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="buttons">Você vai digitar a temperatura em qual escala (C/F)? </label> <br><br>
+            <button class="button-calc" onclick="escolheuC()" style="width: 2cm;"><b>C</b></button>
+            <button class="button-calc" onclick="escolheuF()" style="width: 2cm;"><b>F</b></button> <br><br>
+
+            <div id="resposta"></div>
+        
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex18/script.js"></script>
+
+</body>
+</html>

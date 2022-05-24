@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 11</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 11</h3>
+        <p>
+            Fazer um programa para ler as duas notas que um aluno obteve no
+            primeiro e segundo semestres de uma disciplina anual. Em seguida,
+            mostrar a nota final que o aluno obteve (com uma casa decimal) no ano
+            juntamente com um texto explicativo. Caso a nota final do aluno seja
+            inferior a 60.00, mostrar a mensagem "REPROVADO":
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="nota1">Digite a primeira nota: </label>
+            <input type="text" id="nota1" name="nota1"> <br><br>
+
+            <label for="nota2">Digite a segunda nota: </label>
+            <input type="text" id="nota2" name="nota2"> <br><br>
+
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex11/script.js"></script>
+
+</body>
+</html>
