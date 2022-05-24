@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 14</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 14</h3>
+        <p>
+            Fazer um programa para calcular o troco no processo de pagamento de
+            um produto de uma mercearia. O programa deve ler o preço unitário do
+            produto, a quantidade de unidades compradas deste produto, e o valor em
+            dinheiro dado pelo cliente. Seu programa deve mostrar o valor do troco a
+            ser devolvido ao cliente. Se o dinheiro dado pelo cliente não for suficiente,
+            mostrar uma mensagem informando o valor restante:
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="precoUnit">Preço unitário do produto: </label>
+            <input type="text" id="precoUnit" name="precoUnit"> <br><br>
+
+            <label for="qtdComprada">Quantidade comprada: </label>
+            <input type="text" id="qtdComprada" name="qtdComprada"> <br><br>
+
+            <label for="dinheiroRecebido">Dinheiro recebido: </label>
+            <input type="text" id="dinheiroRecebido" name="dinheiroRecebido"> <br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex14/script.js"></script>
+
+</body>
+</html>

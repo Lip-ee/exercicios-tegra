@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 15</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 15</h3>
+        <p>
+            Fazer um programa para ler a quantidade de glicose no sangue de uma
+            pessoa e depois mostrar na tela a classificação deste glicose de acordo
+            com a tabela de referência abaixo:<br>
+            
+            Classificação - Glicose<br>
+            Normal - Até 100 mg/dl<br>
+            Elevado - Entre 100 e 140 mg/dl<br>
+            Diabetes - Maior que 140 mg/dl<br>
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="glicose">Digite a medida da glicose: </label>
+            <input type="text" id="glicose" name="glicose"> <br><br>
+
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex15/script.js"></script>
+
+</body>
+</html>

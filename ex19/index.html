@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 19</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 19</h3>
+        <p>
+            Uma empresa vai conceder um aumento percentual de salário aos seus
+            funcionários dependendo de quanto cada pessoa ganha, conforme tabela
+            ao lado. Fazer um programa para ler o salário de uma pessoa, daí mostrar
+            qual o novo salário dessa pessoa depois do aumento, quanto foi o aumento
+            e qual foi a porcentagem de aumento: <br><br>
+
+            SALÁRIO ATUAL - AUMENTO<br>
+            Até R$999.99 - 20%<br>
+            Entre R$1000.00 e R$2999.99 - 15%<br>
+            Entre R$3000.00 e R$7999.99 - 10%<br>
+            Acima de R$8000.00 - 05%
+
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="salario">Digite o salário da pessoa: </label>
+            <input type="text" id="salario" name="salario"> <br><br>
+
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex19/script.js"></script>
+
+</body>
+</html>

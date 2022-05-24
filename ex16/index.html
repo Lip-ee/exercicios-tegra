@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 16</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 16</h3>
+        <p>
+            No arremesso de dardo, o atleta tem três chances para lançar o dardo à
+            maior distância que conseguir. Você deve criar um programa para, dadas
+            as medidas das três tentativas de lançamento, informar qual foi a maior:
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="dist1">Digite a primeira distância: </label>
+            <input type="text" id="dist1" name="dist1"> <br><br>
+
+            <label for="dist2">Digite a segunda distância: </label>
+            <input type="text" id="dist2" name="dist2"> <br><br>
+
+            <label for="dist3">Digite a terceira distância: </label>
+            <input type="text" id="dist3" name="dist3"> <br><br>
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex16/script.js"></script>
+
+</body>
+</html>

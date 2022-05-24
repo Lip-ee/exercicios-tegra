@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../generic-style.css"> <!-- GENERIC CSS -->
+    <title>Exercício 12</title>
+</head>
+<body>
+
+    <!-- TITLE + DESC -->
+    <div id="box-text">
+
+        <h3>Exercício 12</h3>
+        <p>
+            Fazer um programa para ler os três coeficientes de uma equação do
+            segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores
+            das raízes x1 e x2 da equação com quatro casas decimais. Se a equação não
+            possuir raízes reais, mostrar uma mensagem:
+        </p>
+
+    </div>
+    
+    <!-- INPUT AREA -->
+    <div id="input-div">
+        <div id="box-text">
+
+            <h3>Input</h3>
+            <label for="a">Coeficiente a: </label>
+            <input type="text" id="a" name="a"> <br><br>
+
+            <label for="b">Coeficiente b: </label>
+            <input type="text" id="b" name="b"> <br><br>
+
+            <label for="c">Coeficiente c: </label>
+            <input type="text" id="c" name="c"> <br><br>
+
+        
+        <button class="button-calc" onclick="calcular()"><b>Calcular</b></button>
+
+        </div>
+    </div>
+
+    <!-- OUTPUT AREA -->
+    <div id="output-div">
+        <div id="box-text">
+
+            <h3>Output</h3>
+            <p id="output"></p>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT LINK -->
+    <script src="/ex12/script.js"></script>
+
+</body>
+</html>
