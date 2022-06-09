@@ -2,7 +2,6 @@ function calcular(){
 
     // atribuindo variáveis e resolvendo a lógica
     let dataNasc = parseInt((document.getElementById("dataNasc").value).replace("/", ""));
-    console.log(dataNasc)
     let signo;
 
     if(121 < dataNasc && dataNasc < 218){
@@ -27,14 +26,15 @@ function calcular(){
         signo = "Escorpião";
     }else if(1122 < dataNasc && dataNasc < 1221){
         signo = "Sagitário";
-    }else{ //if(1222 < dataNasc < 120)
+    }else{ //if(1222 < dataNasc < 120) == wrong.
         signo = "Capricórnio";
     }
     
     // output
+    let dataNascWithBar = document.getElementById("dataNasc").value;
     document.getElementById("output").innerHTML = `
-    Data de Nascimento: <span><b>${dataNasc}</b></span> <br><br>
-    Signo: ${signo}
+    Data de Nascimento: <span><b>${dataNascWithBar}</b></span> <br><br>
+    <b>Signo: ${signo}</b>
     `;
 }
 
